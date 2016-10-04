@@ -1,3 +1,13 @@
-<h1>
-  {{title}}
-</h1>
+
+
+  <div class="text" *ngFor="let item of items | async"  class="col-1-4" >
+  <div class="module hero">
+      <img src="{{item.picture}}" >
+    <h4>{{item.name}}</h4>
+    {{item.$key}}
+    {{item.artist}}
+    {{item.played}}
+    {{item.value}}
+    <img src="http://www.clipartbest.com/cliparts/bcy/Egx/bcyEgxxzi.png" (click)="gotoDetail(item.$key, item.played)" >
+    </div>
+  </div>
