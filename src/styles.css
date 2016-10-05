@@ -1,1 +1,170 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+	font-size: 18px; 
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Albums.compradas{
+	background: #C80A3C;
+	color: rgb(255,255,255);
+	
+}
+.Songs.compradas{
+	color: #C80A3C;
+	background: rgb(255,255,255);
+
+}
+
+.Songs.escuchadas{
+	background: #C80A3C;
+	color: rgb(255,255,255);
+}
+.Albums.escuchadas{
+	color: #C80A3C;
+	background: rgb(255,255,255);
+}
+
+.top-button {
+	width: 50%; 
+	height: 100%; 
+
+
+}
+.top-conteiner{
+	height: 61px; 
+	border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+
+
+}
+.top-button p{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.top-button-left {
+	float: left; 
+}
+.top-button-right {
+	float: right;
+}
+
+.action-button {
+    width: 45px;
+    height: 45px;
+    float: right;
+    margin: 3px;
+    margin-right: 10px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #C80A3C;
+    float: left;
+    margin: 0;
+}
+.artist{
+	font-size: 18px;
+	font-weight: lighter;
+	color: #404040;
+	float: left;
+	margin: 0px; 
+    margin-bottom: 5px;
+}
+
+item-row{
+
+}
+
+ .even { color: red; }
+    
+ .odd { color: green; }
+
+.module.hero {
+    width: 100%;
+    height: 100%;
+    border-top-style: solid;
+    border-color: #DDDDDD;
+    border-top-width: 1px;
+
+}
+
+
+.module.hero.even {
+    background: #F0F0F0;
+}
+
+
+.item-row {
+    height: 60px;
+    width: 100%;
+}
+
+.names-container {
+    height: 30px;
+    float: left;
+    margin: 8px;
+    width: 57%;
+}
+
+.bottom {
+    height: 134px;
+    background: #c80a3c;
+}
+
+.loading {
+    height: 100%;
+    background: #c80a3c;
+}
+
+img.bottom-image {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+app-root{
+
+	    height: 100%;
+
+}
+
+
+.thumbnail {
+	float: left;
+    height: 55px;
+    width: 55px;
+    margin-left: 3px;
+    margin-top: 1px;
+    margin-right: 3px;
+    margin-bottom: 1px;
+
+
+  position: relative;
+
+  overflow: hidden;
+}
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+
+.limited {
+    width: 90%;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -10,22 +10,33 @@ import { AngularFire, FirebaseListObservable, FirebaseObjectObservable} from 'an
 export class AppComponent {
   title = 'app works!'; 
   af: AngularFire; 
+  list:  string; 
 
   items: FirebaseListObservable<any[]>;
+  reverse: FirebaseListObservable<any[]>;
+
   constructor(af: AngularFire) {
   	this.af = af; 
-    this.items = af.database.list('Songs');
- 
+  	this.list= "Songs"; 
+    this.items = af.database.list(this.list, 
+    {query:{orderByChild: 'played'}});
+
   }
 
-  gotoDetail(key: string, currentPlayed) {
-	  var playedTimes = currentPlayed+1; 
+  play(key: string, currentPlayed) {
+	  var playedTimes = currentPlayed-1; 
 	  this.items.update(key, { played: playedTimes });
-	  console.log(key);
-	  console.log(playedTimes);
 
 
   }
+
+  changeList(list:string){
+  	this.list = list;
+  	this.items = this.af.database.list(this.list,
+  	{query:{orderByChild: 'played'}}
+  	);
+  }
+
 
 
 }

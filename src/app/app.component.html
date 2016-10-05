@@ -1,13 +1,43 @@
 
+<div class="top-conteiner">
+   <div class="{{list}} escuchadas top-button top-button-left" (click)="changeList('Songs')" ><p>+ Escuchadas</p></div>
+   <div class="{{list}} compradas top-button top-button-right" (click)="changeList('Albums')"><p>+ Comprados</p></div>
 
-  <div class="text" *ngFor="let item of items | async"  class="col-1-4" >
-  <div class="module hero">
-      <img src="{{item.picture}}" >
-    <h4>{{item.name}}</h4>
-    {{item.$key}}
-    {{item.artist}}
-    {{item.played}}
-    {{item.value}}
-    <img src="http://www.clipartbest.com/cliparts/bcy/Egx/bcyEgxxzi.png" (click)="gotoDetail(item.$key, item.played)" >
+</div>
+<div class="container">
+
+  <div class="text" *ngFor="let item of items  | async ; let index=index; let odd=odd; let even=even;" class="item-row">
+  
+  <div class="module hero" 
+  [ngClass]="{ odd: odd, even: even }"
+  >
+  	<div class="thumbnail ">
+     <img  class= "element-picture" src="{{item.picture}}" >
+	</div>
+     <div class="names-container">
+      <div>
+      <div class= "limited name">
+    {{item.name}}
+      </div>
     </div>
+    <div>
+    <div class= "limited artist">
+    {{item.artist}}
+    </div></div>
+    </div>
+   
+
+
+    <img class="action-button" src="/assets/{{list}}.png" (click)="play(item.$key, item.played)" >
+    </div>
+</div>
+
+  </div>
+
+  <div class="bottom">
+
+    <a href="http://www.lacreativeria.com/"> <img class="bottom-image" src="/assets/creativeria.png" ></a>
+
+
+
   </div>
