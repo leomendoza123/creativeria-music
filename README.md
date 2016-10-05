@@ -1,31 +1,59 @@
-# Web
+#Live example: 
+----------
+https://creativeriamusic-d6a20.firebaseapp.com/
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.16.
 
+#Running the project
+----------
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+## Firebase deploy 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+run `firebase deploy`
 
-## Running end-to-end tests
+#Learned leassons 
+----------
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
-Before running the tests make sure you are serving the app via `ng serve`.
+##Angular2 Cli hello world 
+https://drive.google.com/open?id=0B569OJeOrFAyNzVaWVNoMzFETE0
 
-## Deploying to Github Pages
+## Connect Angular2 to Firebase
 
-Run `ng github-pages:deploy` to deploy to Github Pages.
+https://drive.google.com/open?id=0B569OJeOrFAyY181QXQwQzdRQUE
 
-## Further help
+## Deploy Agular2 on Firebase
 
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+https://drive.google.com/open?id=0B569OJeOrFAyX1I3WGNaSzRFLUE
+
+##Other basic angunlar examples
+
+https://drive.google.com/open?id=0B569OJeOrFAyaWRIY2tSVkRveHc
+
+#Issues solutions 
+----------
+## Descending order on firebase querry
+https://drive.google.com/open?id=0B569OJeOrFAyZE5ydTVnTHFFOFU
+*The reasong why the played and buyed times are negative on the database" 
+## Name space Firebase not found
+*This problems happends with the deploy of Firebase2 deployment*
+See solution at 
+https://drive.google.com/open?id=0B569OJeOrFAyY181QXQwQzdRQUE
+
+
+#Development steps 
+----------
+
+##First prototipe
+![](https://s21.postimg.org/yu6t2yyuv/image.png=250x)
+
+##Second prototipe
+![](https://s21.postimg.org/6vcnc3x87/image.png=250x)
+
+##Final product
+![](https://s21.postimg.org/ws6boq0vr/image.png =250x)
+
